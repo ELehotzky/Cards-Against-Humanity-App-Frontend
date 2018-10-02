@@ -1,4 +1,4 @@
-iport React from 'react';
+import React from 'react';
 
 // javascript code for scrollbar:
 // $(document).ready(function () {
@@ -13,11 +13,11 @@ class GameScoreBox extends React.Component {
   render() {
     return (
       <div>
-
+            HELLO SCORE BOX
       </div>
     )
   }
 
 }
 
-export default GameScoreBox
+export default GameScoreBox;
