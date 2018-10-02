@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: red;
   height: 150px;
   padding: 20px;
   color: white;
@@ -25,4 +25,25 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+/* ScoreBox -CSS */
+/* .table {
+  border: 1px solid black;
+  margin: auto;
+  font-size: 30px;
+
+}
+.table-bordered {
+
+}
+.table-striped{
+
+} */
+
+.GameScoreBox {
+  display: block;
+  max-height: 450px;
+  max-width: 350px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
