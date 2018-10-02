@@ -24,7 +24,7 @@ class GameWelcomePage extends React.Component {
         HELLO GAME WELCOME PAGE
         <button onClick={this.onClickStartGame}>Start New Game</button>
         <button onClick={this.onClickJoinGame}>Join Game</button>
-        {/* <GamePage /> */}
+        <GamePage />
       </div>
     );
   }
