@@ -28,13 +28,6 @@ class App extends Component {
     return (
       <div className="App">
 
-
-        <p className="App-intro">
-            <Link to="/gameHost"><Button> Create New Game </Button></Link>
-            <Link to="/user"><Button>Join a Game</Button></Link>
-
-        </p>
-
         <Switch>
           <Route path="/gameHost" render={() => <GameHost setGameId={this.setGameId}/>} />
           <Route path="/user" render={() => <User gameId={this.state.gameId}/>}  />

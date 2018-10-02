@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WarpCable from 'warp-cable-client'
+import { Button } from 'reactstrap';
 let api = WarpCable()
 
 export default class User extends Component {
@@ -22,7 +23,7 @@ export default class User extends Component {
       <div>
         <input placeholder="game ID" onChange={e => this.setState({game_id:e.target.value})}></input>
         <input placeholder="Name" onChange={e => this.setState({name:e.target.value})}></input>
-        <button onClick={this.addUser}>submit</button>
+        <Button onClick={this.addUser}>Submit</Button>
       </div>
 
     );
