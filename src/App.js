@@ -2,18 +2,35 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button } from 'reactstrap';
+import GameHost from './Components/GameHost'
+import User from './Components/User'
+import { Route, Link, Switch, Redirect } from "react-router-dom";
 
 class App extends Component {
+  state={
+    gameId:null
+
+  }
+
+  setGameId = (id) =>{
+    this.setState({gameId:id})
+  }
+
   render() {
+    console.log(this.state)
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+            <Link to="/gameHost"><Button> Create New Game </Button></Link>
+            <Link to="/user"><Button>Join a Game</Button></Link>
+
         </p>
+
+        <Switch>
+          <Route path="/gameHost" render={() => <GameHost setGameId={this.setGameId}/>} />
+          <Route path="/user" render={() => <User gameId={this.state.gameId}/>}  />
+        </Switch>
       </div>
     );
   }
