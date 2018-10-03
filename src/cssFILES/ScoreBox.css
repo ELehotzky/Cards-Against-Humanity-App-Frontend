@@ -1,0 +1,20 @@
+.table {
+  border: 1px solid black;
+  margin: auto;
+  font-size: 30px;
+
+}
+.table-bordered {
+
+}
+.table-striped{
+
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+  max-height: 450px;
+  max-width: 300px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
